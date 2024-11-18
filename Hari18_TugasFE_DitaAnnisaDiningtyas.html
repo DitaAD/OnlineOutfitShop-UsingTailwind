@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Dita Annisa Diningtyas | Kelas Front End | Hari 18 -->
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Website Tailwind css</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+<!-- Navbar -->
+<nav class="bg-gray-800 text-white fixed top-0 w-full z-50">
+  <div class="max-w-screen-xl mx-auto flex items-center justify-between p-4">
+    <!-- Logo -->
+    <a href="https://SparkTech.com/" class="flex items-center space-x-2">
+      <span class="text-2xl font-bold">SparkTech</span>
+    </a>
+    <!-- Links -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="#hero" class="hover:text-gray-300">Home</a>
+      <a href="#new-product-launch" class="hover:text-gray-300">New Arrival</a>
+      <a href="#sale" class="hover:text-gray-300">Sale</a>
+      <a href="#shop" class="hover:text-gray-300">Shop</a>
+      <a href="#information" class="hover:text-gray-300">Information</a>
+    </div>
+    <!-- Icons -->
+    <div class="flex items-center space-x-6">
+      <button class="hover:text-gray-400">
+        <img src="img/search.svg" alt="Search" class="w-5 h-5">
+      </button>
+      <button class="hover:text-gray-400">
+        <img src="img/user.svg" alt="User" class="w-5 h-5">
+      </button>
+      <button class="hover:text-gray-400">
+        <img src="img/cart.svg" alt="Cart" class="w-5 h-5">
+      </button>
+      <!-- Mobile Menu Toggle -->
+      <button id="hamburger-menu" class="block md:hidden">
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+    </div>
+  </div>
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden bg-gray-700 md:hidden">
+    <a href="#hero" class="block py-2 px-4 hover:bg-gray-600">Home</a>
+    <a href="#new-product-launch" class="block py-2 px-4 hover:bg-gray-600">New Arrival</a>
+    <a href="#sale" class="block py-2 px-4 hover:bg-gray-600">Sale</a>
+    <a href="#shop" class="block py-2 px-4 hover:bg-gray-600">Shop</a>
+    <a href="#information" class="block py-2 px-4 hover:bg-gray-600">Information</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="relative h-screen">
+  <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('https://wallpapers.com/images/high/trendy-women-s-clothing-store-o1hw41upaeojuonq.webp');">
+    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+  </div>
+  <div class="relative container mx-auto h-full flex items-center px-4">
+    <div class="w-full md:w-1/2 text-white">
+      <h2 class="text-5xl font-bold mb-6 text-gray-100">Shop Our Latest Collection</h2>
+      <p class="text-xl mb-8 text-gray-300">Explore the latest trends in fashion and find your next favorite piece. Shop now and enjoy our exclusive deals!</p>
+      <a href="#shop" class="inline-block bg-blue-600 text-white font-semibold rounded-lg px-8 py-4 hover:bg-blue-700 transition-all duration-300 ease-in-out">Start Shopping</a>
+    </div>
+  </div>
+</section>
+
+<!-- New Product Launch Section -->
+<section id="new-product-launch" class="py-16 mt-24 bg-gray-50">
+  <div class="container mx-auto px-4 text-center">
+    <h2 class="text-4xl font-bold text-gray-900 mb-6">Introducing Our Latest Collection</h2>
+    <p class="text-lg text-gray-600 mb-12">Fresh, stylish, and comfortable clothing to elevate your wardrobe. Shop our new arrivals now!</p>
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <div class="bg-white shadow-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://harajukustreetwear.com/cdn/shop/products/O1CN014ErBfv1h8lD1SXoFk__668204233_720x.jpg?v=1712560266" alt="Comic Button-up Shirt" class="w-full h-80 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-2xl font-semibold text-gray-800">Comic Button-up Shirt</h3>
+          <p class="text-gray-600 mt-2">High-quality cotton shirt with a unique comic-style print. Perfect for casual outings.</p>
+          <a href="#" class="font-bold mt-4 block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">See</a>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://harajukustreetwear.com/cdn/shop/products/Exo-SkeletonKnitHoodedSweatshirt_7.jpg?v=1677468913" alt="Cozy Hoodie" class="w-full h-80 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-2xl font-semibold text-gray-800">Cozy Hoodie</h3>
+          <p class="text-gray-600 mt-2">A stylish hoodie designed for warmth and comfort during cooler months.</p>
+          <a href="#" class="font-bold mt-4 block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">See</a>
+        </div>
+      </div>
+      <div class="bg-white shadow-lg overflow-hidden transform hover:scale-105 transition">
+        <img src="https://harajukustreetwear.com/cdn/shop/products/O1CN01yk4uHV1r3OwtcCkCY__1124265575_720x.webp?v=1702787987" alt="Oil Painted Jeans" class="w-full h-80 object-cover">
+        <div class="p-6 text-left">
+          <h3 class="text-2xl font-semibold text-gray-800">Oil Painted Jeans</h3>
+          <p class="text-gray-600 mt-2">Durable and stylish jeans with a modern oil-paint design.</p>
+          <a href="#" class="font-bold mt-4 block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">See</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Limited Time Offer Section -->
+<section class="py-16 bg-gradient-to-r from-gray-800 to-black">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+      <!-- Left side: Text and Button -->
+      <div class="text-center md:text-left">
+        <h3 class="text-3xl font-bold text-white mb-4">Don’t Miss Out On Our Limited-Time Launch Offers!</h3>
+        <p class="text-lg text-white mb-8">Exclusive discounts available for a short time. Shop now and be among the first to own our new collection!</p>
+        <a href="#shop" class="px-8 py-3 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition duration-300 ease-in-out">Look >></a>
+      </div>
+      <!-- Right side: Image -->
+      <div class="relative overflow-hidden rounded-lg">
+        <img src="https://harajukustreetwear.com/cdn/shop/products/BJHGStripedLogoOversizedSweatpants_47.jpg?v=1675864230" alt="Limited Time Offer" class="w-full h-full object-cover">
+      </div> 
+    </div>
+  </div>
+</section>
+
+<!-- Sale Section -->
+<!-- Sale Section -->
+<section id="sale" class="py-16 bg-gray-100">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-gray-900 mb-6">On Sale</h2>
+    <p class="text-lg text-gray-600 mb-12">Clothing on sale today, come check it out</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="bg-white shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition">
+        <img src="https://harajukustreetwear.com/cdn/shop/products/image_c4127a8d-53c5-4dc9-ae39-88bd3ad5d0d0.jpg?v=1675864068" alt="Double Panel Hooded Jacket" class="w-full h-64 object-cover">
+        <div class="p-4 flex-1">
+          <span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">17% off</span>
+          <h3 class="mt-2 text-lg font-semibold text-gray-800">HARSH and CRUEL Painted Autumn Hoodie</h3>
+          <p class="mt-2 text-gray-500 line-through">$120.00</p>
+          <p class="text-red-500">$100.00</p>
+        </div>
+        <button class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+      </div>
+
+      <div class="bg-white shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition">
+        <img src="https://harajukustreetwear.com/cdn/shop/products/O1CN01naYZEV1SIddJTnVBJ__438822224.jpg?v=1712559443" alt="Hooded Zip Jacket" class="w-full h-64 object-cover">
+        <div class="p-4 flex-1">
+          <span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">18% off</span>
+          <h3 class="mt-2 text-lg font-semibold text-gray-800">CTB Monochrome Baggy Cargo Pants</h3>
+          <p class="mt-2 text-gray-500 line-through">$88.00</p>
+          <p class="text-red-500">$72.00</p>
+        </div>
+        <button class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+      </div>
+
+      <div class="bg-white shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition">
+        <img src="https://harajukustreetwear.com/cdn/shop/files/S28a97f0d92c84c87b180bfd87c896920k.webp?v=1727639693" alt="Sherpa Jacket" class="w-full h-64 object-cover">
+        <div class="p-4 flex-1">
+          <span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">20% off</span>
+          <h3 class="mt-2 text-lg font-semibold text-gray-800">Vintage Washed Deconstructed Forgiveness Hoodie</h3>
+          <p class="mt-2 text-gray-500 line-through">$150.00</p>
+          <p class="text-red-500">$120.00</p>
+        </div>
+        <button class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+      </div>
+
+      <div class="bg-white shadow-lg overflow-hidden flex flex-col transform hover:scale-105 transition">
+        <img src="https://harajukustreetwear.com/cdn/shop/files/O1CN01PzY7iC1r3Ox1xvJhj__1124265575.jpg?v=1702343704" alt="Painted Autumn Hoodie" class="w-full h-64 object-cover">
+        <div class="p-4 flex-1">
+          <span class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded">31% off</span>
+          <h3 class="mt-2 text-lg font-semibold text-gray-800">HJK Exclusive Oil Painted Jeans</h3>
+          <p class="mt-2 text-gray-500 line-through">$144.00</p>
+          <p class="text-red-500">$100.00</p>
+        </div>
+        <button class="w-full bg-blue-600 text-white font-bold py-2 px-4 rounded hover:bg-blue-700">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Other than clothing Section -->
+<section id="information" class="py-16 bg-gray-100 h-screen">
+  <div class="container mx-auto px-4 h-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center h-full">
+      <div class="relative overflow-hidden rounded-lg h-full w-full">
+        <img src="https://harajukustreetwear.com/cdn/shop/files/O1CN01NcqDDh1JTmr1NIu6Z__1899181030.jpg?v=1719985022" alt="Limited Time Offer" class="w-full h-full object-cover">
+      </div>
+      <div class="text-center md:text-left">
+        <h3 class="text-3xl font-bold text-gray-900 mb-4">Don’t Miss Out On Our Limited-Time Launch Offers!</h3>
+        <p class="text-lg text-gray-600 mb-8">Exclusive discounts available for a short time. Shop now and be among the first to own our new collection!</p>
+        <a href="#shop" class="px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out">Look >></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 px-6 py-10">
+    <!-- Shop -->
+    <div>
+      <h3 class="font-bold text-lg mb-4">Shop</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">New Arrival</a></li>
+        <li><a href="#" class="hover:underline">Sales</a></li>
+        <li><a href="#" class="hover:underline">Jacket</a></li>
+        <li><a href="#" class="hover:underline">Hoodie</a></li>
+        <li><a href="#" class="hover:underline">Shirt</a></li>
+        <li><a href="#" class="hover:underline">Pants</a></li>
+      </ul>
+    </div>
+    <!-- Information -->
+    <div>
+      <h3 class="font-bold text-lg mb-4">Information</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Reviews</a></li>
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">Terms of Service</a></li>
+        <li><a href="#" class="hover:underline">Shipping</a></li>
+      </ul>
+    </div>
+    <!-- Help -->
+    <div>
+      <h3 class="font-bold text-lg mb-4">Help</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">FAQ</a></li>
+        <li><a href="#" class="hover:underline">Contact Us</a></li>
+        <li><a href="#" class="hover:underline">Accessibility</a></li>
+        <li><a href="#" class="hover:underline">Subscriptions</a></li>
+      </ul>
+    </div>
+    <!-- Sign up and social media -->
+    <div class="font-semibold mb-8">
+      <h3 class="font-semibold mb-4">Sign up for sale, new arrivals & more</h3>
+      <form class="flex items-center space-x-2 mb-4">
+        <input type="email" placeholder="Enter your email" class="w-full border rounded px-2 py-1 focus:outline-none focus:ring-2 focus:ring-gray-400">
+        <button type="submit" class="bg-white text-black px-4 py-1 rounded hover:bg-gray-700">Submit</button>
+      </form>
+      <div class="flex space-x-4 mt-4">
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <img src="img/instagram.svg" alt="Instagram" class="w-6 h-6">
+        </a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <img src="img/twitter.svg" alt="Twitter" class="w-6 h-6">
+        </a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <img src="img/pinterest.svg" alt="Pinterest" class="w-6 h-6">
+        </a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <img src="img/tiktok.svg" alt="Tiktok" class="w-6 h-6">
+        </a>
+        <a href="#" class="text-gray-700 hover:text-gray-900">
+          <img src="img/tumblr.svg" alt="Tumblr" class="w-6 h-6">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="border-t mt-8 pt-4 text-center text-xs text-gray-500">
+    <p>© All Rights Reserved, 2024 Williams-Sonoma Inc.</p>
+    <div class="space-x-4">
+      <a href="#" class="hover:underline">Terms & Conditions</a>
+      <a href="#" class="hover:underline">Accessibility</a>
+      <a href="#" class="hover:underline">Privacy Policy</a>
+    </div>
+  </div>
+</footer>
+
+  <!-- Toggle Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+</body>
+
+</html>
